@@ -9,8 +9,8 @@
 
 
 .profile-img{
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border: 8px solid rgb(73, 71, 71); 
   border-radius: 50%; 
     background-image: url(./images/471657852_578657721799072_7137945943883885587_n.jpg);
@@ -20,11 +20,11 @@
 }
 
 .social-icons {
-    width: 30px;
-    height: 30px;
+    width: 10%;
+    height: 25px;
     text-align: center;
     border-radius: 50px;
-    line-height: 30px;
+    line-height: 25px;
     background-color: rgb(70, 70, 70);
     transition: 0.5s;
 }
@@ -52,15 +52,19 @@
 /* Colors */
 
 .my-color-blue{
-    color: rgb(110, 110, 177);
+    color: rgb(107, 107, 224);
 }
 
-
+.my-color-lightblue {
+    color: rgb(124, 180, 194);
+}
 .my-color-grey { 
-    color: rgb(199, 192, 192);
+    color: rgb(240, 231, 231);
 }
 
-
+.my-bg-lightblue {
+    background-color: rgb(0, 0, 0);
+}
 /* Margins & Paddings */
 .my-margin-top-10 {
     margin-top: 10rem;
@@ -86,5 +90,3 @@
 .link-hover:hover {
     border-bottom: 2px solid rgb(78, 78, 199);
 }
-
-
