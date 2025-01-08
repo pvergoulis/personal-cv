@@ -10,169 +10,354 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
         integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=important_devices" />
     <link rel="stylesheet" href="./style.css">
     <title>CV - Resume</title>
 </head>
 
 <body>
-    <div class="d-flex ">
-        <nav class="my-bg-lightblue  vh-100 sticky-top col-2">
-            <div class="d-flex justify-content-center mb-2 mt-5">
-                <img src="" class="profile-img" alt="">
-            </div>
-            <h2 class="text-light text-center fs-5">Παύλος Βεργούλης</h2>
-            <div class=" container-sm row">
-                <div class="container d-flex justify-content-center col">
-                    <span class="d-inline-block m-3 social-icons"><a href="https://x.com/glodge13"><i class="bi bi-twitter-x text-white"></i>
-                    </a></span>
-                <span class="d-inline-block m-3 social-icons"><a href="https://www.facebook.com/paulos.vergoulis"><i
-                            class="bi bi-facebook text-white"></i></a></span>
+    <div class="contaier-fluid px-0">
+        <!--Navbar  -->
+        <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand " href="#">
+                    <span class=" h3 fw-bold  text-white ">Pavlos Vergoulis</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a href="#home" class="nav-link me-lg-3 text-white hover-menu"><i class="bi bi-house fs-5 me-1"></i> <span class="d-inline-block"> Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link me-lg-3 text-white hover-menu"><i class="bi bi-person fs-5 me-1"></i><span class=" d-inline-block ">About</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#cv" class="nav-link me-lg-3 text-white hover-menu"><i class="bi bi-file-earmark-text fs-5 me-1"></i><span class="d-inline-block ">Resume</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link me-lg-3 text-white hover-menu"><i class="bi bi-images fs-5 me-1"></i><span class="d-inline-block ">Projects</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link me-lg-3 text-white hover-menu"> <i class="bi bi-envelope fs-5 me-1"></i><span class="d-inline-block ">Contact</span></a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="d-flex justify-content-center">
-                    <span class="d-inline-block m-3 social-icons"><a href="https://www.instagram.com/paulosvergoulis/"><i
-                        class="bi bi-instagram text-white"></i></a></span>
-            <span class="d-inline-block m-3 social-icons"><a href="https://github.com/pvergoulis?tab=repositories"><i
-                        class="bi bi-github text-white"></i></a></span>
-                </div>
-                
-            </div>
-            <div class="container d-flex flex-column align-items-center   ">
-                <span class="d-block  mb-2"><a href="#home" class="text-white m-3 text-decoration-none fs-5 hover-menu"> <i
-                            class="bi bi-house "></i><span class="ms-3">Home</span> </a></span>
-                <span class="d-block mb-2"><a href="#about" class="text-white m-3 text-decoration-none fs-5 hover-menu"> <i
-                            class="bi bi-person"></i><span class="ms-3">About</span></a></span>
-                <span class="d-block mb-2"><a href="#cv" class="text-white m-3 text-decoration-none fs-5 hover-menu"> <i
-                            class="bi bi-file-earmark-text"></i><span class="ms-3">Resume</span></a></span>
-                <span class="d-block mb-2"><a href="#project" class="text-white m-3 text-decoration-none fs-5 hover-menu"> <i
-                            class="bi bi-images"></i><span class="ms-3">Projects</span></a></span>
-                <span class="d-block "><a href="#contact" class="text-white m-3 text-decoration-none fs-5 hover-menu"> <i
-                            class="bi bi-envelope"></i><span class="ms-3">Contact</span></a></span>
             </div>
         </nav>
-        <div class="w-100 d-flex align-items-center  my-bg-img">
-            <div class="container-fluid mb-1  " id="home">
-                <div class="container mt-5">
-                    <span class="my-title ps-5 my-color-grey">ΠΑΥΛΟΣ</span>
-                    <span class="my-title ps-3 my-color-blue">ΒΕΡΓΟΥΛΗΣ</span>
-                    <div class="my-margin-top-10">
-                        <h3 class="ps-5 mt-3 fs-2 my-color-blue">I'am Software Engineer</h3>
+        
+        </nav>
+        <!-- Navbar ends -->
+
+        <!-- Header -->
+        <header class="bg-light py-5 shadow">
+            <div class="container px-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="my-5">
+                            <h2 class="text-center fw-bold mb-2">Hi! I'm Paul,</h2>
+                            <h2 class="text-center text-primary fw-bold mb-2">a full-stack developer</h2>
+                            <p class="lead text-muted mb-4">I specialize in building websites at the moment. Scroll down
+                                to see
+                                what I have been working on.</p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-center">
+                                <a href="#about" class="btn btn-primary btn-large text-uppercase">Learn More <i
+                                        class="bi bi-question-circle fs-5 ms-2"></i></a>
+                                <a href="#projects" class="btn btn-outline-primary btn-large text-uppercase">View My
+                                    Work <i class="bi bi-view-list fs-5 ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-xxl-6 justify-content-center">
+                        <img src="./images/photo-1719937206168-f4c829152b91.avif" alt="image"
+                            class="img-fluid rounded-3 my-5">
                     </div>
                 </div>
+            </div>
+        </header>
+        <!-- Header Ends -->
 
-                <div class="mt-5 mb-5 container">
-                    <p class="ps-5 fs-5 my-color-grey fw-light">Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit.
-                        Ad minus
-                        necessitatibus minima, cumque ipsam
-                        beatae ipsa, corporis numquam quasi totam sint dolor omnis. Harum libero, explicabo amet
-                        aliquam
-                        autem maxime.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, laborum maxime quo accusantium
-                        magni quos facilis pariatur accusamus omnis impedit! Nihil qui aspernatur architecto aliquam
-                        modi fuga exercitationem laborum porro?
+        <!-- About -->
+        <section id="about" class="text-center py-5 shadow">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <h2 class="fw-bold">About</h2>
+                    <p class="lead text-muted mb-5">
+                        I am a software engineering student with a passion to learn more programming languages ​​and
+                        upgrade my knowledge and skills.
                     </p>
                 </div>
+            </div>
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-lg-4 mx-auto mb-5">
+                        <div class="d-flex mb-5 about">
+                            <i class="bi bi-palette m-auto text-primary fs-4"></i>
+                        </div>
+                        <h5>Design</h5>
+                        <p class="text-muted mb-0">
+                            I create beautiful, modern designs optimazed for multiple color modes.
+                        </p>
+                    </div>
 
-                <div class="container my-margin-top-10" id="about">
-                    <h1 class="my-color-blue ps-5 fs-2">About me</h1>
-                    <p class="my-color-grey ps-5 fw-light fs-5 mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Praesentium exercitationem maiores
-                        cupiditate odit officia inventore? Provident hic libero fuga ratione nemo nisi qui quam adipisci
-                        natus! Voluptatum quis illum quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Placeat asperiores quidem incidunt exercitationem nihil suscipit repudiandae similique,
-                        voluptate enim, possimus labore fuga animi obcaecati libero doloribus, quis aperiam deleniti
-                        corporis?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quas quidem magni
-                        praesentium nostrum culpa cum maxime iste minima at aliquid ipsum obcaecati, accusamus,
-                        similique aliquam sed nesciunt nam facere?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iste inventore tempora modi!
-                        Vitae est sapiente adipisci ducimus, soluta porro quae autem illo, minima maxime eveniet?
-                        Suscipit at porro illum?
-                    </p>
+                    <div class="col-lg-4 mx-auto mb-5">
+                        <div class="d-flex mb-5 about">
+                            <i class="bi bi-code-slash text-primary fs-4 m-auto"></i>
+                        </div>
+                        <h5>Development</h5>
+                        <p class="text-muted mb-0">
+                            I develop responsive, scalable and elegent websites.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 mx-auto mb-5">
+                        <div class="d-flex mb-5 about">
+                            <i class="bi bi-gear text-primary fs-4 m-auto"></i>
+                        </div>
+                        <h5>Launch & Maintenance</h5>
+                        <p class="text-muted mb-0">
+                            Once the application is ready, I will help you launch it and maintain it.
+                        </p>
+                    </div>
                 </div>
+            </div>
+        </section>
+        <!-- About ends -->
 
-                <div class="container my-margin-top-10" id="cv">
-                    <h1 class="my-color-blue ps-5 fs-2">CV</h1>
-                    <p class="my-color-grey ps-5 fw-light fs-5 mt-5">
-                        Presently I work as a barista specialist in coffee industry and in
+        
+
+        <!-- CV -->
+         <section id="cv" class="text-center py-5 shadow">
+            <div class="container mb-5">
+                <div class="row justify-content-center">
+                    <h2 class="fw-bold">CV - Resume</h2>
+                    <p class="lead text-muted mb-5">Presently I work as a barista specialist in coffee industry and in
                         restaurants. I am interested in changing professional field and I 
                         intent to use my initial Certificate as an IT technician and pursue 
                         related jobs. My goal is to complete software courses and in the
-                        near future to work as a software developer.
-                    </p>
-                    <div class="mt-5">
+                        near future to work as a software developer.</p>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto mb-5">
                         <h4 class="my-color-lightblue ps-5 fs-5 mt-3">WORKING EXPERIENCE</h2>
                             <ul>
-                                <span class="my-color-grey ps-5 ">Working as private employee at Internet café Virus, Athens 2016-2017</span>
-                                <li class="my-color-grey ps-5">Sales assistant and customer service</li>
-                                <li class="my-color-grey ps-5">Sales assistant and customer service</li>
+                                <span class=" ps-5 ">Working as private employee at Internet café Virus, Athens 2016-2017</span>
+                                <li class=" ps-5">Sales assistant and customer service</li>
+                                <li class=" ps-5">Sales assistant and customer service</li>
                             </ul>
                             <ul>
-                                <span class="my-color-grey ps-5 ">Working as a cook at Sissy Bay Hotel and Spa, Crete, 2018</span>
-                                <li class="my-color-grey ps-5">Chef assistant for hot meals preparation</li>
-                                <li class="my-color-grey ps-5">Responsible for live action cuisine, organization and team coordination</li>
+                                <span class=" ps-5 ">Working as a cook at Sissy Bay Hotel and Spa, Crete, 2018</span>
+                                <li class=" ps-5">Chef assistant for hot meals preparation</li>
+                                <li class=" ps-5">Responsible for live action cuisine, organization and team coordination</li>
                             </ul>
                             <ul>
-                                <span class="my-color-grey ps-5 ">Barista Manager at Coffee Berry 2019 - today</span>
-                                <li class="my-color-grey ps-5">Responsible for coffee preparation and team’s coordination</li>
-                                <li class="my-color-grey ps-5">Collaboration with suppliers</li>
+                                <span class=" ps-5 ">Barista Manager at Coffee Berry 2019 - today</span>
+                                <li class=" ps-5">Responsible for coffee preparation and team’s coordination</li>
+                                <li class=" ps-5">Collaboration with suppliers</li>
                             </ul>
                     </div>
+                    <div class="col-lg-6 mx-auto mb-5">
 
-                    <div class="mt-5">
                         <h4 class="my-color-lightblue ps-5 fs-5 mt-3">EDUCATION</h2>
-                            <ul>
-                                <span class="my-color-grey ps-5 d-block">IT application technician at IEK AKMI 2011 - 2013</span>
-                                <span class="my-color-grey ps-5">Coding Factory Athens University of Economics and Business 2024 - today</span>
-                                <li class="my-color-grey ps-5">Java</li>
-                                <li class="my-color-grey ps-5">C</li>
-                                <li class="my-color-grey ps-5">C++</li>
-                                <li class="my-color-grey ps-5">HTML</li>
-                                <li class="my-color-grey ps-5">CSS</li>
-                                <li class="my-color-grey ps-5">Bootstrap</li>
+                            <ul class="list-style-none">
+                                <span class="ps-5 d-block">IT application technician at IEK AKMI 2011 - 2013</span>
+                                <span class="ps-5 d-block mb-2">Coding Factory Athens University of Economics and Business 2024</span>
+                                <li class="ps-5">Java</li>
+                                <li class="ps-5">HTML</li>
+                                <li class="ps-5">CSS</li>
+                                <li class=" ps-5">Bootstrap</li>
                             </ul>
-                            <h4 class="my-color-lightblue ps-5 fs-5 mt-3">Foreign Languages</h2>   
+                            <h4 class=" ps-5 fs-5 mt-3">Foreign Languages</h2>   
                            <ul>
-                                <li class="my-color-grey ps-5">English C2, Michigan State University, 2024</li>
-                                <li class="my-color-grey ps-5">Greek </li>
+                                <li class=" ps-5">English C2, Michigan State University, 2024</li>
+                                <li class=" ps-5">Greek </li>
                            </ul>
                     </div>
+                </div>
+            </div>
+         </section>
+        <!-- CV ends -->
 
-                    <div class="my-margin-top-10 container mb-5 ">
-                        <h1 class="my-color-blue ps-5 fs-1 ">Projects</h1>
-                    </div>
-            
-                    <div class="container " id="project">
-                        <div class="row justify-content-md-center">
-                            <div class="col-lg-6">
-                                <h1 class="my-color-lightblue ps-5 fs-2 ">Pokedex</h1> 
-                                <img src="./images/462563342_1257004662223324_8906243967129566882_n.png" class="project-img" alt="">
-                                <span class="d-block"><a href="https://github.com/pvergoulis/mini-projects/tree/main/Pokedex" class="link-light text-decoration-none link-hover">Check the code</a></span>
+        
+        <!-- Project -->
+        <section id="projects" class="text-center py-5 shadow">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <h2 class="fw-bold">Projects</h2>
+                    <p class="lead text-muted mb-5">
+                        View some of my work.
+                    </p>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-lg-3 mx-auto mb-5">
+                        <div class="card h-100 shadow-lg border-0 bg-light">
+                            <img src="./images/pokedexx.png" alt="Pokedex project" class="card-img-top">
+                            <div class="card-body p-4">
+                                <h5 class="card-title mb-3">Pokedex</h5>
+                                <div class="mb-2">
+                                    <div class="badge bg-primary rouded-pill">HTML</div>
+                                    <div class="badge bg-primary rouded-pill">CSS</div>
+                                </div>
+                                <p class="card-text">
+                                    Builded by HTML 5 & CSS 3
+                                </p>
                             </div>
-                            <div class="col-lg-6">
-                                <h1 class="my-color-lightblue ps-5 fs-2 ">Login Form</h1>
-                                <img src="./images/472593138_1413058529655236_1954907604011816482_n.png" class="project-img" alt="">
-                                <span class="d-block"><a href="https://github.com/pvergoulis/mini-projects/tree/main/forrest-login-form" class="link-light text-decoration-none link-hover">Check the code</a></span>
+                            <div class="card-footer bg-trasnparent mb-3">
+                                <a href="https://github.com/pvergoulis/mini-projects/tree/main/Pokedex" target="_blank"
+                                    class="btn btn-outline-primary btn-sm text-uppercase "> <i
+                                        class="bi bi-code-slash pe-2"></i>Check the code</a>
                             </div>
                         </div>
                     </div>
 
-
-                    <div class="container my-margin-top-10" id="contact">
-                        <h1 class="my-color-blue ps-5 fs-2">Contact</h1>
-                        <ul>
-                            <li class="my-color-grey ps-5"><span><i class="bi bi-telephone"></i> </span> 6980753417</li>
-                            <li class="my-color-grey ps-5"><span><i class="bi bi-envelope"></i> </span>vergoulispaulos@gmail.com</li>
-                            <li class="my-color-grey ps-5"><span><i class="bi bi-geo-alt"></i> </span>Athens, Μουστοξύδη 10</li>
-                        </ul>
+                    <div class="col-lg-3 mx-auto mb-5">
+                        <div class="card h-100 shadow-lg border-0 bg-light">
+                            <img src="./images/login.png" alt="Login form project" class="card-img-top">
+                            <div class="card-body p-4">
+                                <h5 class="card-title mb-3">Login Form</h5>
+                                <div class="mb-2">
+                                    <div class="badge bg-primary rouded-pill">HTML</div>
+                                    <div class="badge bg-primary rouded-pill">CSS</div>
+                                </div>
+                                <p class="card-text">
+                                    Builded by HTML 5 & CSS 3
+                                </p>
+                            </div>
+                            <div class="card-footer bg-trasnparent mb-3">
+                                <a href="https://github.com/pvergoulis/mini-projects/tree/main/forrest-login-form"
+                                    target="_blank" class="btn btn-outline-primary btn-sm text-uppercase "> <i
+                                        class="bi bi-code-slash pe-2"></i>Check the code</a>
+                            </div>
+                        </div>
                     </div>
-                    
+
+                    <div class="col-lg-3 mx-auto mb-5">
+                        <div class="card h-100 shadow-lg border-0 bg-light">
+                            <img src="./images/principle.png" alt="principle project" class="card-img-top">
+                            <div class="card-body p-4">
+                                <h5 class="card-title mb-3">My First Project</h5>
+                                <div class="mb-2">
+                                    <div class="badge bg-primary rouded-pill">HTML</div>
+                                    <div class="badge bg-primary rouded-pill">CSS</div>
+                                </div>
+                                <p class="card-text">
+                                    Builded by HTML 5 & CSS 3
+                                </p>
+                            </div>
+                            <div class="card-footer bg-trasnparent mb-3">
+                                <a href="https://github.com/pvergoulis/mini-projects/tree/main/principle"
+                                    target="_blank" class="btn btn-outline-primary btn-sm text-uppercase "> <i
+                                        class="bi bi-code-slash pe-2"></i>Check the code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 mx-auto mb-5">
+                        <div class="card h-100 shadow-lg border-0 bg-light">
+                            <img src="./images/museum.png" alt="principle project" class="card-img-top">
+                            <div class="card-body p-4">
+                                <h5 class="card-title mb-3">Museum of Candys</h5>
+                                <div class="mb-2">
+                                    <div class="badge bg-primary rouded-pill">HTML</div>
+                                    <div class="badge bg-primary rouded-pill">CSS</div>
+                                    <div class="badge bg-primary rouded-pill">Bootstrap</div>
+                                </div>
+                                <p class="card-text">
+                                    Builded by HTML 5, CSS 3 , Bootstrap
+                                </p>
+                            </div>
+                            <div class="card-footer bg-trasnparent mb-3">
+                                <a href="https://github.com/pvergoulis/mini-projects/tree/main/Museum-of-candy"
+                                    target="_blank" class="btn btn-outline-primary btn-sm text-uppercase "> <i
+                                        class="bi bi-code-slash pe-2"></i>Check the code</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- Project ends -->
+
+        
+
+        <!-- Contact -->
+        <section id="contact" class="text-center py-5 shadow">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <h2 class="fw-bold ">Contact</h2>
+                    <p class="lead text-muted mb-5">
+                        Do you need a full-stack developer? I would love to hear from you.
+                    </p>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-xl-5 col-xxl-6 mb-5">
+                        <p>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1714.4972572739687!2d23.739197730414087!3d37.99108819739714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a2b54bfbb825%3A0xca2b2da1439e9b51!2sAndrea%20Moustoxidi%2010%2C%20Athina%20114%2073!5e0!3m2!1sen!2sgr!4v1736330558054!5m2!1sen!2sgr"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </p>
+                    </div>
+                    <div class="col-lg-8 col-xl-7 col-xxl-6 mb-5">
+                        <div class="mb-5">
+                            <h6 class="text-uppercase mb-2">Address</h6>
+                            <p class="lead mb-0">Athens, Greece</p>
+                        </div>
+                        <div class="mb-5">
+                            <h6 class="text-uppercase mb-2">Phone</h6>
+                            <p class="lead mb-0">6980753417</p>
+                        </div>
+                        <div class="mb-5">
+                            <h6 class="text-uppercase mb-2">Email</h6>
+                            <p class="lead mb-0">vergoulispaulos@gmail.com</p>
+                        </div>
+                        <div class="mb-5">
+                            <h6 class="text-uppercase mb-2">Social Media</h6>
+
+                            <span class="d-inline-block m-3 social-icons"><a href="https://x.com/glodge13"><i
+                                        class="bi bi-twitter-x text-white"></i>
+                                </a></span>
+                            <span class="d-inline-block m-3 social-icons"><a
+                                    href="https://www.facebook.com/paulos.vergoulis"><i
+                                        class="bi bi-facebook text-white"></i></a></span>
+
+                            <span class="d-inline-block m-3 social-icons"><a
+                                    href="https://www.instagram.com/paulosvergoulis/"><i
+                                        class="bi bi-instagram text-white"></i></a></span>
+                            <span class="d-inline-block m-3 social-icons"><a
+                                    href="https://github.com/pvergoulis?tab=repositories"><i
+                                        class="bi bi-github text-white"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
+    </section>
+    <!-- Contact ends -->
 
+  
 
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <div class="container px-5 mb-2">
+            Copyright &copy; 2025 Paul's Portofolio Website
+        </div>
+    </footer>
+    <!--Footer ends  -->
 
 
 

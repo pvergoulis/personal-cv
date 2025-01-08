@@ -1,92 +1,39 @@
-*{
+body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
+}
+.navbar {
+    background-color: rgb(82, 82, 160);
+}
+.my-title{
+    font-size: 1.4rem;
+    font-weight: 700; 
 }
 
-
-/* Nav-bar */
-
-
-.profile-img{
-  width: 100px;
-  height: 100px;
-  border: 8px solid rgb(73, 71, 71); 
-  border-radius: 50%; 
-    background-image: url(./images/471657852_578657721799072_7137945943883885587_n.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 1rem;
+.hover-menu{ 
+    transition: 0.4s ease;
 }
 
 .social-icons {
-    width: 10%;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     text-align: center;
     border-radius: 50px;
-    line-height: 25px;
+    line-height: 35px;
     background-color: rgb(70, 70, 70);
     transition: 0.5s;
 }
 
-
-/* Main */
-
-.my-title {
-    font-size: 3.5rem;
-    letter-spacing: 4px;
-    font-weight: 900;
-}
-
-.my-bg-img {
-    background-image: url(./images/programming-02.jpg);
-    background-size:auto;
-    background-repeat: repeat;
-    
-}
-
-.project-img {
-    width: 50%;
-    height: auto;
-}
-/* Colors */
-
-.my-color-blue{
-    color: rgb(107, 107, 224);
-}
-
-.my-color-lightblue {
-    color: rgb(124, 180, 194);
-}
-.my-color-grey { 
-    color: rgb(240, 231, 231);
-}
-
-.my-bg-lightblue {
-    background-color: rgb(0, 0, 0);
-}
-/* Margins & Paddings */
-.my-margin-top-10 {
-    margin-top: 10rem;
-}
-
-.my-margin-top-20 {
-    margin-top: 20rem;
-}
-
-
-/* Hovers */
 
 .social-icons:hover {
     background-color: rgb(78, 78, 199);
     transform: scale(1.2);
 }
 
-.hover-menu:hover {
-  border-bottom: 2px solid rgb(78, 78, 199);
-  transform: scale(2);
-}
 
-.link-hover:hover {
-    border-bottom: 2px solid rgb(78, 78, 199);
-}
+.hover-menu:hover {
+    border-bottom: 3px solid rgb(223, 223, 226);
+    color: white;
+    transform: scale(1.1);
+  }
