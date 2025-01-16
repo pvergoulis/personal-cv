@@ -15,6 +15,7 @@ body{
     transition: 0.4s ease;
 }
 
+
 .social-icons {
     width: 35px;
     height: 35px;
@@ -33,7 +34,6 @@ body{
 
 
 .hover-menu:hover {
-    border-bottom: 3px solid rgb(223, 223, 226);
-    color: white;
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
+
